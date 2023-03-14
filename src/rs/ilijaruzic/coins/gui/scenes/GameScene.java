@@ -31,18 +31,22 @@ public class GameScene extends Canvas {
                     case KeyEvent.VK_W: {
                         int y = player.getY() - fieldWidth;
                         player.setY(y < 0 ? player.getY() : y);
+                        break;
                     }
                     case KeyEvent.VK_S: {
                         int y = player.getY() + fieldWidth;
                         player.setY(y > getHeight() ? player.getY() : y);
+                        break;
                     }
                     case KeyEvent.VK_A: {
                         int x = player.getX() - fieldWidth;
                         player.setX(x < 0 ? player.getX() : x);
+                        break;
                     }
                     case KeyEvent.VK_D: {
                         int x = player.getX() + fieldWidth;
                         player.setX(x > getWidth() ? player.getX() : x);
+                        break;
                     }
                 }
                 repaint();
